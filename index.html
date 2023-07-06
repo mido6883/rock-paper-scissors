@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="warning" class="warning none"><p>PLEASE TILT YOUR DEVICE</p></div>
+    <div class="container">
+        <div class="rules">
+            <div>
+                <span>RULES</span>
+                <img id="close" src="./images/icon-close.svg" alt="close">
+            </div>
+            <img src="./images/image-rules.svg" alt="rules">
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="logo">
+                <div class="score">
+                    <span>score</span>
+                    <span id="score">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="game-container">
+            <div id="game" class="game">
+                <img src="./images/bg-triangle.svg" alt="bg-triangle">
+                <div class="option scissors" data-option="scissors">
+                    <div class="wrapper">
+                        <img src="./images/icon-scissors.svg" alt="scissors">
+                    </div>
+                </div>
+                <div class="option paper" data-option="paper">
+                    <div class="wrapper">
+                        <img src="./images/icon-paper.svg" alt="paper">
+                    </div>
+                </div>
+                <div class="option rock" data-option="rock">
+                    <div class="wrapper">
+                        <img src="./images/icon-rock.svg" alt="rock">
+                    </div>
+                </div>
+            </div>
+            <div id="result" class="result none">
+                <div id="user" class="user you">
+                    <div class="wrapper">
+                        <img src="./images/icon-scissors.svg" alt="scissors">
+                    </div>
+                </div>
+                <div id="result-box" class="result-box none">
+                    <p>you win</p>
+                    <button id="restart">play again</button>
+                </div>
+                <div id="empty" class="empty house">
+                    <span></span>
+                </div>
+                <div id="pc" class="pc house none">
+                    <div class="wrapper">
+                        <img src="./images/icon-scissors.svg" alt="scissors">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="btn" class="btn">rules</button>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
